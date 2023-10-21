@@ -207,9 +207,9 @@ class DXCamera:
         if capture_error is not None:
             self.stop()
             raise capture_error
-        print(
-            f"Screen Capture FPS: {int(self.__frame_count/(time.perf_counter() - self.__capture_start_time))}"
-        )
+        #print(
+        #    f"Screen Capture FPS: {int(self.__frame_count/(time.perf_counter() - self.__capture_start_time))}"
+        #)
 
     def _rebuild_frame_buffer(self, region: Tuple[int, int, int, int]):
         if region is None:
